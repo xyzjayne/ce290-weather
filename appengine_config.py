@@ -2,4 +2,5 @@
 from google.appengine.ext import vendor
 
 # Add any libraries install in the "lib" folder.
-vendor.add('/home/orzmath/src/ce290-weather/lib')
+vendor.add(os.path.join(os.path.dirname(os.path.realpath(__file__)), 'lib'))
+#vendor.add('/home/orzmath/src/ce290-weather/lib')
